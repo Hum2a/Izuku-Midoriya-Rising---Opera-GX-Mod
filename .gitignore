@@ -1,0 +1,4 @@
+# Optional - uncomment if you want to exclude large media from git
+# wallpaper/*.webm
+# music/*.mp3
+# music/*.wav

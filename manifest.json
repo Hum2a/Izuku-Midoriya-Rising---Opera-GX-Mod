@@ -1,0 +1,84 @@
+{
+  "manifest_version": 3,
+  "name": "Izuku Midoriya: Rising - Opera GX Mod Pack",
+  "description": "Full Izuku Midoriya: Rising themed mod - animated wallpaper, You Say Run background music, sounds, theme, and shaders for Opera GX",
+  "version": "1.0",
+  "icons": {
+    "512": "Deku_Nut.png"
+  },
+  "developer": {
+    "name": "Humza Butt"
+  },
+  "mod": {
+    "schema_version": 1,
+    "license": "license.txt",
+    "payload": {
+      "wallpaper": {
+        "dark": {
+          "image": "wallpaper/dark.webm",
+          "first_frame": "wallpaper/dark.png",
+          "text_color": "#FFFFFF",
+          "text_shadow": "#000000"
+        },
+        "light": {
+          "image": "wallpaper/light.webm",
+          "first_frame": "wallpaper/light.png",
+          "text_color": "#000000",
+          "text_shadow": "#FFFFFF"
+        }
+      },
+      "background_music": [
+        "music/You_Say_Run_Track_1.wav",
+        "music/You_Say_Run_Track_2.wav",
+        "music/You_Say_Run_Track_3.wav",
+        "music/You_Say_Run_Track_4.wav"
+      ],
+      "browser_sounds": {
+        "CLICK": ["sound/click.wav"],
+        "FEATURE_SWITCH_OFF": ["sound/feature_switch_off.wav"],
+        "FEATURE_SWITCH_ON": ["sound/feature_switch_on.wav"],
+        "HOVER": ["sound/hover.wav"],
+        "HOVER_UP": ["sound/hover.wav"],
+        "IMPORTANT_CLICK": ["sound/important_click.wav"],
+        "LEVEL_UPGRADE": ["sound/level_upgrade.wav"],
+        "LIMITER_OFF": ["sound/limiter_off.wav"],
+        "LIMITER_ON": ["sound/limiter_on.wav"],
+        "SWITCH_TOGGLE": ["sound/switch.wav"],
+        "TAB_CLOSE": ["sound/close_tab.wav"],
+        "TAB_INSERT": ["sound/new_tab.wav"],
+        "TAB_SLASH": ["sound/tab_slash.wav"]
+      },
+      "keyboard_sounds": {
+        "TYPING_BACKSPACE": ["keyboard/backspace.wav"],
+        "TYPING_ENTER": ["keyboard/enter.wav"],
+        "TYPING_LETTER": ["keyboard/letter_1.wav", "keyboard/letter_2.wav", "keyboard/letter_3.wav"],
+        "TYPING_SPACE": ["keyboard/space.wav"]
+      },
+      "theme": {
+        "dark": {
+          "gx_accent": { "h": 145, "s": 85, "l": 50 },
+          "gx_secondary_base": { "h": 220, "s": 60, "l": 12 }
+        },
+        "light": {
+          "gx_accent": { "h": 145, "s": 80, "l": 40 },
+          "gx_secondary_base": { "h": 220, "s": 40, "l": 92 }
+        }
+      },
+      "shaders": {
+        "Hero Glow": {
+          "path": "shader/hero_glow.txt"
+        },
+        "Plus Ultra": {
+          "animation": { "duration": 60, "steps": 3600 },
+          "path": "shader/plus_ultra.txt"
+        }
+      },
+      "page_styles": [
+        {
+          "css": ["webmodding/opera.css"],
+          "matches": ["https://*.opera.com/*"]
+        }
+      ]
+    }
+  }
+}

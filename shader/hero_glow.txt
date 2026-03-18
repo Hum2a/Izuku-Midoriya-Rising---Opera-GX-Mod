@@ -1,0 +1,9 @@
+// MHA Hero Glow - subtle green tint (SkSL)
+uniform shader iChunk;
+
+// Green hero tint - MHA style
+const float4 TINT = float4(0.9, 1.1, 0.95, 1);
+
+vec4 main(vec2 xy) {
+  return pow(iChunk.eval(xy), TINT);
+}

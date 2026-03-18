@@ -1,0 +1,5 @@
+/* MHA-themed web modding - uses Opera GX accent/background colors */
+body, a {
+  color: env(-opera-gx-accent-color);
+  background: env(-opera-gx-background-color);
+}
