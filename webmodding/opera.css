@@ -1,6 +1,4 @@
-/* Izuku Midoriya Rising - Opera pages */
-@import "theme.css";
-
+/* Izuku Midoriya Rising - Opera pages (theme.css loaded via manifest) */
 body, a {
   color: env(-opera-gx-accent-color, var(--deku-accent));
   background: env(-opera-gx-background-color, var(--deku-bg-dark));

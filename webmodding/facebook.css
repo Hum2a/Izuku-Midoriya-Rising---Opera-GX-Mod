@@ -1,6 +1,4 @@
-/* Izuku Midoriya Rising - Facebook */
-@import "theme.css";
-
+/* Izuku Midoriya Rising - Facebook (theme.css loaded via manifest) */
 /* Dark mode overrides */
 [data-theme="dark"],
 html[data-theme="dark"],

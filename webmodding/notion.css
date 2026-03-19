@@ -1,6 +1,4 @@
-/* Izuku Midoriya Rising - Notion */
-@import "theme.css";
-
+/* Izuku Midoriya Rising - Notion (theme.css loaded via manifest) */
 /* Override Notion default theme */
 [data-content-editable-root],
 .notion-frame {

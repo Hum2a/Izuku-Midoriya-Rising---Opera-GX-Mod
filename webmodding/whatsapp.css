@@ -1,6 +1,4 @@
-/* Izuku Midoriya Rising - WhatsApp Web */
-@import "theme.css";
-
+/* Izuku Midoriya Rising - WhatsApp Web (theme.css loaded via manifest) */
 /* Override WhatsApp green */
 :root {
   --deku-accent: #0FDB6E;

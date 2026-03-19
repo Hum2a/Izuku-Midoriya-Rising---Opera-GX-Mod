@@ -1,6 +1,4 @@
-/* Izuku Midoriya Rising - Twitch */
-@import "theme.css";
-
+/* Izuku Midoriya Rising - Twitch (theme.css loaded via manifest) */
 :root {
   --color-background-base: var(--deku-bg-dark) !important;
   --color-background-alt: var(--deku-bg-elevated) !important;

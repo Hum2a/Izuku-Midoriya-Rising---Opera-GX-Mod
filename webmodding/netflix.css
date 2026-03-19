@@ -1,6 +1,4 @@
-/* Izuku Midoriya Rising - Netflix */
-@import "theme.css";
-
+/* Izuku Midoriya Rising - Netflix (theme.css loaded via manifest) */
 :root {
   --netflix-red: var(--deku-accent) !important;
   --nf-red: var(--deku-accent) !important;

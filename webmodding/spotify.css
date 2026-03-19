@@ -1,6 +1,4 @@
-/* Izuku Midoriya Rising - Spotify */
-@import "theme.css";
-
+/* Izuku Midoriya Rising - Spotify (theme.css loaded via manifest) */
 :root {
   --background-base: var(--deku-bg-dark) !important;
   --background-elevated: var(--deku-bg-elevated) !important;

@@ -1,6 +1,4 @@
-/* Izuku Midoriya Rising - GitHub */
-@import "theme.css";
-
+/* Izuku Midoriya Rising - GitHub (theme.css loaded via manifest) */
 [data-color-mode="dark"],
 [data-color-mode="dark"][data-light-theme="dark"],
 [data-color-mode="light"][data-dark-theme="dark"] {

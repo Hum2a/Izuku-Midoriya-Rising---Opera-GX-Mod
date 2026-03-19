@@ -1,6 +1,4 @@
-/* Izuku Midoriya Rising - Steam */
-@import "theme.css";
-
+/* Izuku Midoriya Rising - Steam (theme.css loaded via manifest) */
 /* Steam uses #1b2838 blue - override with Deku navy */
 body,
 #global_header,

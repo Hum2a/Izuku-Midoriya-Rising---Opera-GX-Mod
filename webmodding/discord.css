@@ -1,6 +1,4 @@
-/* Izuku Midoriya Rising - Discord */
-@import "theme.css";
-
+/* Izuku Midoriya Rising - Discord (theme.css loaded via manifest) */
 :root {
   --background-primary: var(--deku-bg-dark) !important;
   --background-secondary: var(--deku-bg-elevated) !important;

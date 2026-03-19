@@ -1,6 +1,4 @@
-/* Izuku Midoriya Rising - YouTube */
-@import "theme.css";
-
+/* Izuku Midoriya Rising - YouTube (theme.css loaded via manifest) */
 /* Override YouTube's dark theme with Deku colours */
 :root {
   --yt-spec-base-background: var(--deku-bg-dark) !important;

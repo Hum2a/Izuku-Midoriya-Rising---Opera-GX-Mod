@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Izuku Midoriya: Rising",
   "description": "Full Izuku Midoriya: Rising themed mod - animated wallpaper, You Say Run background music, sounds, Deku green theme, shaders, and webmodding for 21+ popular sites (YouTube, Twitter, Reddit, Discord, GitHub, Netflix, Spotify, and more) with matching accent colours across the web",
-  "version": "1.1",
+  "version": "1.2",
   "icons": {
     "512": "Deku_Nut.png"
   },
@@ -75,11 +75,11 @@
       },
       "page_styles": [
         {
-          "css": ["webmodding/opera.css"],
+          "css": ["webmodding/theme.css", "webmodding/opera.css"],
           "matches": ["https://*.opera.com/*"]
         },
         {
-          "css": ["webmodding/youtube.css"],
+          "css": ["webmodding/theme.css", "webmodding/youtube.css"],
           "matches": ["https://*.youtube.com/*", "https://*.youtu.be/*"]
         },
         {
@@ -87,7 +87,7 @@
           "matches": ["https://twitter.com/*", "https://x.com/*", "https://*.twitter.com/*"]
         },
         {
-          "css": ["webmodding/reddit.css"],
+          "css": ["webmodding/theme.css", "webmodding/reddit.css"],
           "matches": ["https://*.reddit.com/*", "https://*.redd.it/*"]
         },
         {
@@ -95,7 +95,7 @@
           "matches": ["https://discord.com/*", "https://*.discord.com/*"]
         },
         {
-          "css": ["webmodding/twitch.css"],
+          "css": ["webmodding/theme.css", "webmodding/twitch.css"],
           "matches": ["https://*.twitch.tv/*"]
         },
         {
@@ -103,11 +103,11 @@
           "matches": ["https://github.com/*", "https://*.github.com/*"]
         },
         {
-          "css": ["webmodding/google.css"],
+          "css": ["webmodding/theme.css", "webmodding/google.css"],
           "matches": ["https://*.google.com/*", "https://*.google.co.uk/*", "https://*.google.ca/*", "https://mail.google.com/*", "https://drive.google.com/*"]
         },
         {
-          "css": ["webmodding/wikipedia.css"],
+          "css": ["webmodding/theme.css", "webmodding/wikipedia.css"],
           "matches": ["https://*.wikipedia.org/*", "https://*.wikimedia.org/*"]
         },
         {
@@ -115,11 +115,11 @@
           "matches": ["https://*.netflix.com/*"]
         },
         {
-          "css": ["webmodding/steam.css"],
+          "css": ["webmodding/theme.css", "webmodding/steam.css"],
           "matches": ["https://store.steampowered.com/*", "https://*.steampowered.com/*", "https://steamcommunity.com/*"]
         },
         {
-          "css": ["webmodding/amazon.css"],
+          "css": ["webmodding/theme.css", "webmodding/amazon.css"],
           "matches": ["https://*.amazon.com/*", "https://*.amazon.co.uk/*", "https://*.amazon.ca/*", "https://*.amazon.de/*"]
         },
         {
@@ -127,7 +127,7 @@
           "matches": ["https://open.spotify.com/*", "https://*.spotify.com/*"]
         },
         {
-          "css": ["webmodding/facebook.css"],
+          "css": ["webmodding/theme.css", "webmodding/facebook.css"],
           "matches": ["https://*.facebook.com/*", "https://*.fb.com/*", "https://*.messenger.com/*"]
         },
         {
@@ -135,27 +135,27 @@
           "matches": ["https://*.instagram.com/*"]
         },
         {
-          "css": ["webmodding/linkedin.css"],
+          "css": ["webmodding/theme.css", "webmodding/linkedin.css"],
           "matches": ["https://*.linkedin.com/*"]
         },
         {
-          "css": ["webmodding/tiktok.css"],
+          "css": ["webmodding/theme.css", "webmodding/tiktok.css"],
           "matches": ["https://*.tiktok.com/*"]
         },
         {
-          "css": ["webmodding/pinterest.css"],
+          "css": ["webmodding/theme.css", "webmodding/pinterest.css"],
           "matches": ["https://*.pinterest.com/*"]
         },
         {
-          "css": ["webmodding/whatsapp.css"],
+          "css": ["webmodding/theme.css", "webmodding/whatsapp.css"],
           "matches": ["https://web.whatsapp.com/*"]
         },
         {
-          "css": ["webmodding/ebay.css"],
+          "css": ["webmodding/theme.css", "webmodding/ebay.css"],
           "matches": ["https://*.ebay.com/*", "https://*.ebay.co.uk/*"]
         },
         {
-          "css": ["webmodding/notion.css"],
+          "css": ["webmodding/theme.css", "webmodding/notion.css"],
           "matches": ["https://*.notion.so/*", "https://*.notion.site/*"]
         }
       ]

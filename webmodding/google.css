@@ -1,0 +1,54 @@
+/* Izuku Midoriya Rising - Google Search, Gmail, Drive (theme.css loaded via manifest) */
+/* Google Search */
+
+#gb,
+#gb div,
+[data-ved],
+body {
+  background: var(--deku-bg-dark) !important;
+}
+
+/* Search bar focus */
+.gLFyf,
+input[name="q"] {
+  background: var(--deku-bg-elevated) !important;
+  border-color: var(--deku-border) !important;
+  color: var(--deku-text) !important;
+}
+
+.gLFyf:focus,
+input[name="q"]:focus {
+  border-color: var(--deku-accent) !important;
+  box-shadow: 0 0 0 1px var(--deku-accent) !important;
+}
+
+/* Links in results */
+a {
+  color: var(--deku-accent) !important;
+}
+
+a:visited {
+  color: var(--deku-accent-muted) !important;
+}
+
+a:hover {
+  color: var(--deku-accent-hover) !important;
+}
+
+/* Gmail - inbox */
+.aeF, .nH, .bkK {
+  background: var(--deku-bg-dark) !important;
+}
+
+/* Google Drive */
+[role="main"],
+[data-id=":0"] {
+  background: var(--deku-bg-dark) !important;
+}
+
+/* Shared accent for buttons */
+[role="button"][aria-label],
+.gb_g,
+.gb_h {
+  color: var(--deku-accent) !important;
+}

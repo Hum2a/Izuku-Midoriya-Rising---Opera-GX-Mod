@@ -1,6 +1,4 @@
-/* Izuku Midoriya Rising - Pinterest */
-@import "theme.css";
-
+/* Izuku Midoriya Rising - Pinterest (theme.css loaded via manifest) */
 /* Override Pinterest red */
 [data-test-id="pin"] a,
 a[href*="pinterest.com"] {

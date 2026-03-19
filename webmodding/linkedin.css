@@ -1,6 +1,4 @@
-/* Izuku Midoriya Rising - LinkedIn */
-@import "theme.css";
-
+/* Izuku Midoriya Rising - LinkedIn (theme.css loaded via manifest) */
 /* Override LinkedIn blue */
 :root {
   --color-signature: var(--deku-accent) !important;
