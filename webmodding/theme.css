@@ -1,0 +1,15 @@
+/* Izuku Midoriya Rising - Shared theme variables
+ * Deku green accent, dark navy background - matches mod's main colour theme
+ */
+:root {
+  --deku-accent: #0FDB6E;
+  --deku-accent-hover: #12f07d;
+  --deku-accent-muted: rgba(15, 219, 110, 0.6);
+  --deku-accent-subtle: rgba(15, 219, 110, 0.2);
+  --deku-bg-dark: #0D1B2A;
+  --deku-bg-darker: #081118;
+  --deku-bg-elevated: #132536;
+  --deku-border: rgba(15, 219, 110, 0.3);
+  --deku-text: #e8eef4;
+  --deku-text-muted: #8fa3b8;
+}

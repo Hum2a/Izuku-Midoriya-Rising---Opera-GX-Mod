@@ -1,0 +1,42 @@
+/* Izuku Midoriya Rising - Twitch */
+@import "theme.css";
+
+:root {
+  --color-background-base: var(--deku-bg-dark) !important;
+  --color-background-alt: var(--deku-bg-elevated) !important;
+  --color-background-alt-2: var(--deku-bg-darker) !important;
+  --color-text-link: var(--deku-accent) !important;
+  --color-text-link-hover: var(--deku-accent-hover) !important;
+  --color-fill-twitch-purple: var(--deku-accent) !important;
+  --color-border-base: var(--deku-border) !important;
+}
+
+/* Override Twitch purple with Deku green */
+[data-a-target="tw-core-button-primary"],
+button[data-a-target="tw-core-button-primary"],
+.ScCoreButton-sc-1qn4ixc-0.ScCoreButtonPrimary-sc-1qn4ixc-1 {
+  background: var(--deku-accent) !important;
+  border-color: var(--deku-accent) !important;
+}
+
+[data-a-target="tw-core-button-primary"]:hover,
+button[data-a-target="tw-core-button-primary"]:hover {
+  background: var(--deku-accent-hover) !important;
+}
+
+/* Links */
+a[data-a-target="preview-card-image-link"],
+a[href*="twitch.tv"] {
+  color: var(--deku-accent) !important;
+}
+
+/* Live indicator */
+[data-a-target="live-indicator"],
+[class*="live"] {
+  color: var(--deku-accent) !important;
+}
+
+/* Chat highlights */
+[data-a-target="chat-message"] a {
+  color: var(--deku-accent) !important;
+}

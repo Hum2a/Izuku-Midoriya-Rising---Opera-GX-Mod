@@ -1,0 +1,49 @@
+/* Izuku Midoriya Rising - Spotify */
+@import "theme.css";
+
+:root {
+  --background-base: var(--deku-bg-dark) !important;
+  --background-elevated: var(--deku-bg-elevated) !important;
+  --background-tinted-base: var(--deku-bg-darker) !important;
+  --essential-bright-accent: var(--deku-accent) !important;
+  --essential-subdued: var(--deku-accent-muted) !important;
+}
+
+/* Override Spotify green */
+[data-testid="context-menu"],
+[data-testid="now-playing-bar"],
+.Root__main-view {
+  --background-base: var(--deku-bg-dark) !important;
+}
+
+/* Progress bar, play button accent */
+[data-testid="progress-bar"] div,
+[aria-label="Progress bar"] div,
+.progress-bar__fg {
+  background: var(--deku-accent) !important;
+}
+
+/* Links and active states */
+a,
+[data-testid="tracklist-row"] a,
+[data-testid="playlist-track"] a {
+  color: var(--deku-accent) !important;
+}
+
+a:hover {
+  color: var(--deku-accent-hover) !important;
+}
+
+/* Play button, primary controls */
+button[aria-label="Play"],
+button[aria-label="Pause"],
+[data-testid="play-button"] {
+  color: var(--deku-accent) !important;
+}
+
+/* Sidebar selected item */
+[data-testid="sidebar"] [aria-current="page"],
+.xsHm6k {
+  background: var(--deku-accent-subtle) !important;
+  color: var(--deku-accent) !important;
+}

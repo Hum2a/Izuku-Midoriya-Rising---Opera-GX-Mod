@@ -1,0 +1,51 @@
+/* Izuku Midoriya Rising - Wikipedia */
+@import "theme.css";
+
+/* Dark theme for Wikipedia */
+.vector-body,
+#content,
+#bodyContent,
+.mw-parser-output,
+.vector-page-title,
+.vector-toc {
+  background: var(--deku-bg-dark) !important;
+  color: var(--deku-text) !important;
+}
+
+.vector-sidebar-container,
+.vector-header-container {
+  background: var(--deku-bg-elevated) !important;
+  border-color: var(--deku-border) !important;
+}
+
+/* Links - Wikipedia blue → Deku green */
+a {
+  color: var(--deku-accent) !important;
+}
+
+a:visited {
+  color: var(--deku-accent-muted) !important;
+}
+
+a:hover {
+  color: var(--deku-accent-hover) !important;
+}
+
+/* Infobox, tables */
+.infobox,
+.wikitable {
+  background: var(--deku-bg-elevated) !important;
+  border-color: var(--deku-border) !important;
+}
+
+/* Search bar */
+#searchInput,
+.vector-search-box-input {
+  background: var(--deku-bg-darker) !important;
+  border-color: var(--deku-border) !important;
+  color: var(--deku-text) !important;
+}
+
+#searchInput:focus {
+  border-color: var(--deku-accent) !important;
+}

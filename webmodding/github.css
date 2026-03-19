@@ -1,0 +1,44 @@
+/* Izuku Midoriya Rising - GitHub */
+@import "theme.css";
+
+[data-color-mode="dark"],
+[data-color-mode="dark"][data-light-theme="dark"],
+[data-color-mode="light"][data-dark-theme="dark"] {
+  --color-canvas-default: var(--deku-bg-dark) !important;
+  --color-canvas-subtle: var(--deku-bg-elevated) !important;
+  --color-canvas-inset: var(--deku-bg-darker) !important;
+  --color-accent-fg: var(--deku-accent) !important;
+  --color-accent-emphasis: var(--deku-accent) !important;
+  --color-btn-primary-bg: var(--deku-accent) !important;
+  --color-btn-primary-hover-bg: var(--deku-accent-hover) !important;
+  --color-btn-primary-border: var(--deku-accent) !important;
+  --color-fg-default: var(--deku-text) !important;
+  --color-border-default: var(--deku-border) !important;
+}
+
+/* Links */
+a {
+  color: var(--deku-accent) !important;
+}
+
+a:hover {
+  color: var(--deku-accent-hover) !important;
+}
+
+/* Primary buttons */
+.btn-primary,
+[data-color-mode="dark"] .btn-primary {
+  background: var(--deku-accent) !important;
+  border-color: var(--deku-accent) !important;
+}
+
+.btn-primary:hover {
+  background: var(--deku-accent-hover) !important;
+  border-color: var(--deku-accent-hover) !important;
+}
+
+/* Repo language bar, progress */
+[itemprop="programmingLanguage"],
+.lang {
+  color: var(--deku-accent) !important;
+}

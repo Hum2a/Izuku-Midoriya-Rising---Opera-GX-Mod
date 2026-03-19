@@ -1,5 +1,7 @@
-/* MHA-themed web modding - uses Opera GX accent/background colors */
+/* Izuku Midoriya Rising - Opera pages */
+@import "theme.css";
+
 body, a {
-  color: env(-opera-gx-accent-color);
-  background: env(-opera-gx-background-color);
+  color: env(-opera-gx-accent-color, var(--deku-accent));
+  background: env(-opera-gx-background-color, var(--deku-bg-dark));
 }

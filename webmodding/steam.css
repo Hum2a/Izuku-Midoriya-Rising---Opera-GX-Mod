@@ -1,0 +1,51 @@
+/* Izuku Midoriya Rising - Steam */
+@import "theme.css";
+
+/* Steam uses #1b2838 blue - override with Deku navy */
+body,
+#global_header,
+#global_actions,
+.game_page_background {
+  background: var(--deku-bg-dark) !important;
+}
+
+.responsive_page_content,
+.game_area_purchase_game,
+.game_description_snippet {
+  background: var(--deku-bg-elevated) !important;
+  border-color: var(--deku-border) !important;
+}
+
+/* Links - Steam blue → Deku green */
+a,
+a.linkbar {
+  color: var(--deku-accent) !important;
+}
+
+a:hover {
+  color: var(--deku-accent-hover) !important;
+}
+
+/* Price, discount badge */
+.discount_pct,
+.game_purchase_price {
+  color: var(--deku-accent) !important;
+}
+
+/* Green "Play" / purchase buttons */
+.btn_green_steamui,
+.game_purchase_action,
+.install_btn {
+  background: var(--deku-accent) !important;
+  border-color: var(--deku-accent) !important;
+}
+
+.btn_green_steamui:hover,
+.game_purchase_action:hover {
+  background: var(--deku-accent-hover) !important;
+}
+
+/* Online/friend status */
+.friendSmallText.online {
+  color: var(--deku-accent) !important;
+}

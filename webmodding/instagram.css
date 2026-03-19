@@ -1,0 +1,51 @@
+/* Izuku Midoriya Rising - Instagram */
+@import "theme.css";
+
+:root {
+  --deku-accent: #0FDB6E;
+  --deku-accent-hover: #12f07d;
+  --deku-accent-subtle: rgba(15, 219, 110, 0.2);
+  --deku-bg-dark: #0D1B2A;
+  --deku-bg-elevated: #132536;
+}
+
+/* Override Instagram gradient/pink with Deku */
+[role="presentation"],
+main,
+section {
+  background: var(--deku-bg-dark) !important;
+}
+
+/* Links */
+a[href*="instagram.com"],
+a[role="link"] {
+  color: var(--deku-accent) !important;
+}
+
+a:hover {
+  color: var(--deku-accent-hover) !important;
+}
+
+/* Like heart - green when active */
+[aria-label="Like"],
+svg[aria-label="Like"] {
+  color: var(--deku-accent-muted) !important;
+}
+
+/* Story ring, highlights */
+[class*="coreSprite"],
+[class*="story"] {
+  border-color: var(--deku-accent) !important;
+}
+
+/* Primary action buttons */
+button[type="submit"],
+[role="button"][tabindex="0"] {
+  background: var(--deku-accent) !important;
+  color: var(--deku-bg-dark) !important;
+}
+
+/* Primary action buttons */
+button[type="submit"] {
+  background: var(--deku-accent) !important;
+}

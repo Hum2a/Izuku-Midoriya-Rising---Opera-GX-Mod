@@ -1,0 +1,46 @@
+/* Izuku Midoriya Rising - X (Twitter) */
+@import "theme.css";
+
+:root {
+  --deku-accent: #0FDB6E;
+  --deku-accent-hover: #12f07d;
+  --deku-accent-subtle: rgba(15, 219, 110, 0.2);
+  --deku-bg-dark: #0D1B2A;
+  --deku-bg-elevated: #132536;
+}
+
+/* Override Twitter/X theme variables */
+[data-theme="dark"],
+html[data-theme="dark"] {
+  --background-primary: var(--deku-bg-dark) !important;
+  --background-secondary: var(--deku-bg-elevated) !important;
+  --color-primary: var(--deku-accent) !important;
+  --accent: var(--deku-accent) !important;
+}
+
+/* Links and accent elements */
+a[role="link"],
+[data-testid="primaryColumn"] a,
+.r-1re7ezh {
+  color: var(--deku-accent) !important;
+}
+
+a:hover {
+  color: var(--deku-accent-hover) !important;
+}
+
+/* Like/heart - subtle green tint on hover */
+[data-testid="like"],
+[data-testid="unlike"] {
+  color: var(--deku-accent-muted) !important;
+}
+
+/* Tweet composer border */
+[data-testid="tweetTextarea_0"] {
+  border-color: var(--deku-accent-subtle) !important;
+}
+
+/* Verified/primary accent */
+[data-testid="primaryColumn"] [aria-label*="Verified"] {
+  color: var(--deku-accent) !important;
+}

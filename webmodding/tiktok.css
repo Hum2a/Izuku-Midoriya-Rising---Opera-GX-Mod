@@ -1,0 +1,46 @@
+/* Izuku Midoriya Rising - TikTok */
+@import "theme.css";
+
+:root {
+  --deku-accent: #0FDB6E;
+  --deku-accent-hover: #12f07d;
+  --deku-accent-subtle: rgba(15, 219, 110, 0.2);
+  --deku-bg-dark: #0D1B2A;
+  --deku-bg-elevated: #132536;
+}
+
+/* Override TikTok pink/cyan with Deku green */
+[data-e2e="browse-container"],
+[data-e2e="recommend-list"],
+div[class*="DivContainer"] {
+  background: var(--deku-bg-dark) !important;
+}
+
+/* Links */
+a[href*="tiktok.com"],
+a[data-e2e="user-avatar"],
+a[data-e2e="user-name"] {
+  color: var(--deku-accent) !important;
+}
+
+a:hover {
+  color: var(--deku-accent-hover) !important;
+}
+
+/* Like, heart button */
+[data-e2e="like-icon"],
+[data-e2e="like-count"] {
+  color: var(--deku-accent-muted) !important;
+}
+
+/* Progress bar (video) */
+[data-e2e="video-progress"],
+[class*="ProgressBar"] {
+  background: var(--deku-accent) !important;
+}
+
+/* Sidebar, nav */
+[data-e2e="sidebar"],
+nav {
+  background: var(--deku-bg-elevated) !important;
+}

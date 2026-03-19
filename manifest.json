@@ -77,6 +77,86 @@
         {
           "css": ["webmodding/opera.css"],
           "matches": ["https://*.opera.com/*"]
+        },
+        {
+          "css": ["webmodding/youtube.css"],
+          "matches": ["https://*.youtube.com/*", "https://*.youtu.be/*"]
+        },
+        {
+          "css": ["webmodding/twitter.css"],
+          "matches": ["https://twitter.com/*", "https://x.com/*", "https://*.twitter.com/*"]
+        },
+        {
+          "css": ["webmodding/reddit.css"],
+          "matches": ["https://*.reddit.com/*", "https://*.redd.it/*"]
+        },
+        {
+          "css": ["webmodding/discord.css"],
+          "matches": ["https://discord.com/*", "https://*.discord.com/*"]
+        },
+        {
+          "css": ["webmodding/twitch.css"],
+          "matches": ["https://*.twitch.tv/*"]
+        },
+        {
+          "css": ["webmodding/github.css"],
+          "matches": ["https://github.com/*", "https://*.github.com/*"]
+        },
+        {
+          "css": ["webmodding/google.css"],
+          "matches": ["https://*.google.com/*", "https://*.google.co.uk/*", "https://*.google.ca/*", "https://mail.google.com/*", "https://drive.google.com/*"]
+        },
+        {
+          "css": ["webmodding/wikipedia.css"],
+          "matches": ["https://*.wikipedia.org/*", "https://*.wikimedia.org/*"]
+        },
+        {
+          "css": ["webmodding/netflix.css"],
+          "matches": ["https://*.netflix.com/*"]
+        },
+        {
+          "css": ["webmodding/steam.css"],
+          "matches": ["https://store.steampowered.com/*", "https://*.steampowered.com/*", "https://steamcommunity.com/*"]
+        },
+        {
+          "css": ["webmodding/amazon.css"],
+          "matches": ["https://*.amazon.com/*", "https://*.amazon.co.uk/*", "https://*.amazon.ca/*", "https://*.amazon.de/*"]
+        },
+        {
+          "css": ["webmodding/spotify.css"],
+          "matches": ["https://open.spotify.com/*", "https://*.spotify.com/*"]
+        },
+        {
+          "css": ["webmodding/facebook.css"],
+          "matches": ["https://*.facebook.com/*", "https://*.fb.com/*", "https://*.messenger.com/*"]
+        },
+        {
+          "css": ["webmodding/instagram.css"],
+          "matches": ["https://*.instagram.com/*"]
+        },
+        {
+          "css": ["webmodding/linkedin.css"],
+          "matches": ["https://*.linkedin.com/*"]
+        },
+        {
+          "css": ["webmodding/tiktok.css"],
+          "matches": ["https://*.tiktok.com/*"]
+        },
+        {
+          "css": ["webmodding/pinterest.css"],
+          "matches": ["https://*.pinterest.com/*"]
+        },
+        {
+          "css": ["webmodding/whatsapp.css"],
+          "matches": ["https://web.whatsapp.com/*"]
+        },
+        {
+          "css": ["webmodding/ebay.css"],
+          "matches": ["https://*.ebay.com/*", "https://*.ebay.co.uk/*"]
+        },
+        {
+          "css": ["webmodding/notion.css"],
+          "matches": ["https://*.notion.so/*", "https://*.notion.site/*"]
         }
       ]
     }

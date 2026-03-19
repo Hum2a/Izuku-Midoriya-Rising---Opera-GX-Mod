@@ -1,0 +1,53 @@
+/* Izuku Midoriya Rising - Reddit */
+@import "theme.css";
+
+:root {
+  --deku-accent: #0FDB6E;
+  --deku-accent-hover: #12f07d;
+  --deku-accent-subtle: rgba(15, 219, 110, 0.2);
+  --deku-bg-dark: #0D1B2A;
+  --deku-bg-elevated: #132536;
+}
+
+/* Shreddit (new Reddit) theme variables */
+shreddit-app {
+  --color-background: var(--deku-bg-dark) !important;
+  --color-background-secondary: var(--deku-bg-elevated) !important;
+  --color-accent: var(--deku-accent) !important;
+  --color-accent-hover: var(--deku-accent-hover) !important;
+}
+
+/* Old Reddit */
+body.res-night-mode,
+body {
+  background: var(--deku-bg-dark) !important;
+}
+
+.res-night-mode .thing,
+.thing {
+  background: var(--deku-bg-elevated) !important;
+  border-color: var(--deku-border) !important;
+}
+
+a.title,
+a[href*="/r/"] {
+  color: var(--deku-accent) !important;
+}
+
+a.title:hover {
+  color: var(--deku-accent-hover) !important;
+}
+
+/* Upvote/downvote accent */
+.arrow.up {
+  color: var(--deku-accent-muted) !important;
+}
+
+.arrow.upmod {
+  color: var(--deku-accent) !important;
+}
+
+/* New Reddit links */
+shreddit-app a[href] {
+  color: var(--deku-accent) !important;
+}

@@ -1,0 +1,38 @@
+/* Izuku Midoriya Rising - YouTube */
+@import "theme.css";
+
+/* Override YouTube's dark theme with Deku colours */
+:root {
+  --yt-spec-base-background: var(--deku-bg-dark) !important;
+  --yt-spec-general-background-a: var(--deku-bg-dark) !important;
+  --yt-spec-general-background-b: var(--deku-bg-elevated) !important;
+  --yt-spec-general-background-c: var(--deku-bg-darker) !important;
+  --yt-spec-raised-background: var(--deku-bg-elevated) !important;
+  --yt-spec-menu-background: var(--deku-bg-dark) !important;
+  --yt-spec-brand-background-solid: var(--deku-bg-dark) !important;
+  --yt-spec-badge-chip-background: var(--deku-accent-subtle) !important;
+  --yt-spec-brand-text-primary: var(--deku-accent) !important;
+  --yt-spec-call-to-action: var(--deku-accent) !important;
+  --yt-spec-static-brand-red: var(--deku-accent) !important;
+  --yt-spec-themed-blue: var(--deku-accent) !important;
+}
+
+/* Progress bar, links, active states */
+ytd-video-renderer a.yt-simple-endpoint,
+ytd-playlist-video-renderer a.yt-simple-endpoint,
+a#logo,
+ytd-masthead #logo-icon {
+  color: var(--deku-accent) !important;
+}
+
+/* Progress bar fill */
+.ytp-play-progress,
+.ytp-scrubber-button {
+  background: var(--deku-accent) !important;
+}
+
+/* Hover accents */
+ytd-video-renderer:hover,
+ytd-playlist-video-renderer:hover {
+  background: var(--deku-accent-subtle) !important;
+}

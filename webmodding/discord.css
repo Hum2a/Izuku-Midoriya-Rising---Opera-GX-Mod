@@ -1,0 +1,40 @@
+/* Izuku Midoriya Rising - Discord */
+@import "theme.css";
+
+:root {
+  --background-primary: var(--deku-bg-dark) !important;
+  --background-secondary: var(--deku-bg-elevated) !important;
+  --background-secondary-alt: var(--deku-bg-darker) !important;
+  --background-tertiary: var(--deku-bg-elevated) !important;
+  --background-floating: var(--deku-bg-elevated) !important;
+  --background-modifier-hover: var(--deku-accent-subtle) !important;
+  --background-modifier-active: var(--deku-accent-subtle) !important;
+  --channeltextarea-background: var(--deku-bg-darker) !important;
+  --brand-experiment: var(--deku-accent) !important;
+  --brand-experiment-560: var(--deku-accent) !important;
+  --brand-experiment-600: var(--deku-accent-hover) !important;
+  --interactive-active: var(--deku-accent) !important;
+  --interactive-hover: var(--deku-accent-hover) !important;
+  --text-link: var(--deku-accent) !important;
+  --text-positive: var(--deku-accent) !important;
+}
+
+/* Links and interactive elements */
+a {
+  color: var(--deku-accent) !important;
+}
+
+a:hover {
+  color: var(--deku-accent-hover) !important;
+}
+
+/* Online indicator tint */
+[class*="statusGreen"] {
+  color: var(--deku-accent) !important;
+}
+
+/* Selected channel/server */
+[class*="selected"] {
+  background: var(--deku-accent-subtle) !important;
+  border-left-color: var(--deku-accent) !important;
+}

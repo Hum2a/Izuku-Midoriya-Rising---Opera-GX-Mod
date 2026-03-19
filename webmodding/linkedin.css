@@ -1,0 +1,44 @@
+/* Izuku Midoriya Rising - LinkedIn */
+@import "theme.css";
+
+/* Override LinkedIn blue */
+:root {
+  --color-signature: var(--deku-accent) !important;
+  --color-signature-hover: var(--deku-accent-hover) !important;
+}
+
+/* Backgrounds */
+.global-nav,
+.scaffold-layout,
+main {
+  background: var(--deku-bg-dark) !important;
+}
+
+/* Links - LinkedIn blue → Deku green */
+a,
+.app-aware-link,
+[data-control-name] {
+  color: var(--deku-accent) !important;
+}
+
+a:hover {
+  color: var(--deku-accent-hover) !important;
+}
+
+/* Primary buttons */
+button[type="submit"],
+.artdeco-button--primary,
+[data-control-name="connect"] {
+  background: var(--deku-accent) !important;
+  border-color: var(--deku-accent) !important;
+}
+
+.artdeco-button--primary:hover {
+  background: var(--deku-accent-hover) !important;
+}
+
+/* Messaging, notifications */
+[data-test-id="messaging"],
+[aria-label="Messaging"] {
+  color: var(--deku-accent) !important;
+}

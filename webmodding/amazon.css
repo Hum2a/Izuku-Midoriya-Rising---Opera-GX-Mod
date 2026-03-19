@@ -1,0 +1,54 @@
+/* Izuku Midoriya Rising - Amazon */
+@import "theme.css";
+
+/* Main backgrounds */
+#nav-main,
+#nav-belt,
+#nav-footer,
+.nav-left,
+.nav-right {
+  background: var(--deku-bg-dark) !important;
+}
+
+#main-content,
+[data-cel-widget] {
+  background: var(--deku-bg-elevated) !important;
+}
+
+/* Links - Amazon orange → Deku green */
+a,
+.a-link-normal,
+.a-color-link {
+  color: var(--deku-accent) !important;
+}
+
+a:hover,
+.a-link-normal:hover {
+  color: var(--deku-accent-hover) !important;
+}
+
+/* Add to cart, buy buttons */
+#add-to-cart-button,
+#buy-now-button,
+.a-button-primary,
+[data-cel-widget="addToCart"] .a-button {
+  background: var(--deku-accent) !important;
+  border-color: var(--deku-accent) !important;
+}
+
+#add-to-cart-button:hover,
+#buy-now-button:hover,
+.a-button-primary:hover {
+  background: var(--deku-accent-hover) !important;
+}
+
+/* Search bar */
+#twotabsearchtextbox {
+  background: var(--deku-bg-darker) !important;
+  border-color: var(--deku-border) !important;
+  color: var(--deku-text) !important;
+}
+
+#twotabsearchtextbox:focus {
+  border-color: var(--deku-accent) !important;
+}

@@ -1,0 +1,49 @@
+/* Izuku Midoriya Rising - Netflix */
+@import "theme.css";
+
+:root {
+  --netflix-red: var(--deku-accent) !important;
+  --nf-red: var(--deku-accent) !important;
+}
+
+/* Override Netflix red with Deku green */
+.netflix-sans,
+[class*="netflix"] {
+  --netflix-red: var(--deku-accent) !important;
+}
+
+/* Logo, primary buttons */
+.nfLogo,
+.logo,
+[data-uia="header-logo"],
+.episode-list .play {
+  color: var(--deku-accent) !important;
+  fill: var(--deku-accent) !important;
+}
+
+/* Primary CTA buttons */
+.nf-flat-button-primary,
+.btn-primary,
+[data-uia="primary-button"],
+.episode-list .play-button {
+  background: var(--deku-accent) !important;
+  border-color: var(--deku-accent) !important;
+}
+
+.nf-flat-button-primary:hover,
+.btn-primary:hover {
+  background: var(--deku-accent-hover) !important;
+}
+
+/* Progress bar */
+.progress-bar,
+[class*="progress"] {
+  background: var(--deku-accent) !important;
+}
+
+/* Selected/hover cards */
+.title-card:hover,
+[class*="title-card"]:hover {
+  border-color: var(--deku-accent) !important;
+  box-shadow: 0 0 0 2px var(--deku-accent) !important;
+}
