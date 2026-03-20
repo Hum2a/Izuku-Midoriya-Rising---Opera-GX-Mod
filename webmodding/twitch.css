@@ -1,40 +1,98 @@
-/* Izuku Midoriya Rising - Twitch (theme.css loaded via manifest) */
-:root {
-  --color-background-base: var(--deku-bg-dark) !important;
-  --color-background-alt: var(--deku-bg-elevated) !important;
-  --color-background-alt-2: var(--deku-bg-darker) !important;
-  --color-text-link: var(--deku-accent) !important;
-  --color-text-link-hover: var(--deku-accent-hover) !important;
-  --color-fill-twitch-purple: var(--deku-accent) !important;
-  --color-border-base: var(--deku-border) !important;
+/* Izuku Midoriya Rising - Twitch (theme.css loaded via manifest)
+ * Comprehensive overhaul - every element covered
+ */
+
+/* === ROOT: Override Twitch variables === */
+:root,
+html,
+[data-a-target] {
+  --color-background-base: #0D1B2A !important;
+  --color-background-alt: #132536 !important;
+  --color-background-alt-2: #081118 !important;
+  --color-text-link: #0FDB6E !important;
+  --color-text-link-hover: #12f07d !important;
+  --color-fill-twitch-purple: #0FDB6E !important;
+  --color-border-base: rgba(15, 219, 110, 0.3) !important;
 }
 
-/* Override Twitch purple with Deku green */
+/* === BASE === */
+body,
+html,
+[data-a-target="root"],
+.backdrop-container {
+  background-color: #0D1B2A !important;
+}
+
+/* === SIDEBAR === */
+[data-a-target="channel-left-column"],
+[data-a-target="side-nav"],
+nav[aria-label="Side navigation"] {
+  background-color: #081118 !important;
+}
+
+/* === MAIN CONTENT === */
+[data-a-target="channel-right-column"],
+[data-a-target="stream-chat"],
+[data-a-target="chat-room"] {
+  background-color: #0D1B2A !important;
+}
+
+/* === CARDS / THUMBNAILS === */
+[data-a-target="preview-card-image-link"],
+[data-a-target="game-card"],
+[data-a-target="channel-card"] {
+  background-color: #132536 !important;
+  border: 1px solid rgba(15, 219, 110, 0.3) !important;
+}
+
+[data-a-target="preview-card-image-link"]:hover {
+  border-color: #0FDB6E !important;
+}
+
+/* === LINKS === */
+a,
+[data-a-target="stream-title"],
+[data-a-target="channel-link"],
+[data-a-target="user-link"] {
+  color: #0FDB6E !important;
+}
+
+a:hover {
+  color: #12f07d !important;
+}
+
+/* === LIVE INDICATOR === */
+[data-a-target="live-indicator"],
+[class*="live"],
+[class*="LiveIndicator"] {
+  background-color: #0FDB6E !important;
+  color: #0D1B2A !important;
+}
+
+/* === FOLLOW / SUBSCRIBE BUTTONS === */
 [data-a-target="tw-core-button-primary"],
 button[data-a-target="tw-core-button-primary"],
-.ScCoreButton-sc-1qn4ixc-0.ScCoreButtonPrimary-sc-1qn4ixc-1 {
-  background: var(--deku-accent) !important;
-  border-color: var(--deku-accent) !important;
+[data-a-target="follow-button"] {
+  background-color: #0FDB6E !important;
+  border-color: #0FDB6E !important;
+  color: #0D1B2A !important;
 }
 
 [data-a-target="tw-core-button-primary"]:hover,
 button[data-a-target="tw-core-button-primary"]:hover {
-  background: var(--deku-accent-hover) !important;
+  background-color: #12f07d !important;
 }
 
-/* Links */
-a[data-a-target="preview-card-image-link"],
-a[href*="twitch.tv"] {
-  color: var(--deku-accent) !important;
+/* === CHAT === */
+[data-a-target="chat-message"],
+[data-a-target="chat-line__message"] a {
+  color: #0FDB6E !important;
 }
 
-/* Live indicator */
-[data-a-target="live-indicator"],
-[class*="live"] {
-  color: var(--deku-accent) !important;
-}
-
-/* Chat highlights */
-[data-a-target="chat-message"] a {
-  color: var(--deku-accent) !important;
+[data-a-target="chat-input"],
+[data-a-target="chat-input-field"],
+textarea {
+  background-color: #081118 !important;
+  border: 1px solid rgba(15, 219, 110, 0.3) !important;
+  color: #e8eef4 !important;
 }

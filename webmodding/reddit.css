@@ -1,51 +1,166 @@
-/* Izuku Midoriya Rising - Reddit (theme.css loaded via manifest) */
-:root {
-  --deku-accent: #0FDB6E;
-  --deku-accent-hover: #12f07d;
-  --deku-accent-subtle: rgba(15, 219, 110, 0.2);
-  --deku-bg-dark: #0D1B2A;
-  --deku-bg-elevated: #132536;
+/* Izuku Midoriya Rising - Reddit (theme.css loaded via manifest)
+ * Comprehensive overhaul - Old Reddit + New Reddit (Shreddit)
+ */
+
+/* === NEW REDDIT (Shreddit) - Root variables === */
+:root,
+shreddit-app,
+[data-shreddit-app] {
+  --color-background: #0D1B2A !important;
+  --color-background-secondary: #132536 !important;
+  --color-background-tertiary: #081118 !important;
+  --color-accent: #0FDB6E !important;
+  --color-accent-hover: #12f07d !important;
+  --color-border: rgba(15, 219, 110, 0.3) !important;
+  --color-text-primary: #e8eef4 !important;
+  --color-text-secondary: #8fa3b8 !important;
 }
 
-/* Shreddit (new Reddit) theme variables */
 shreddit-app {
-  --color-background: var(--deku-bg-dark) !important;
-  --color-background-secondary: var(--deku-bg-elevated) !important;
-  --color-accent: var(--deku-accent) !important;
-  --color-accent-hover: var(--deku-accent-hover) !important;
+  background-color: #0D1B2A !important;
 }
 
-/* Old Reddit */
-body.res-night-mode,
-body {
-  background: var(--deku-bg-dark) !important;
+/* === NEW REDDIT - All elements === */
+shreddit-app *,
+[data-testid="frontpage-content"],
+[data-testid="post-container"],
+[data-testid="subreddit-sidebar"] {
+  --color-background: #0D1B2A !important;
+  --color-background-secondary: #132536 !important;
+  --color-accent: #0FDB6E !important;
 }
 
-.res-night-mode .thing,
-.thing {
-  background: var(--deku-bg-elevated) !important;
-  border-color: var(--deku-border) !important;
+/* New Reddit - post cards */
+article,
+[data-testid="post-container"],
+[role="article"] {
+  background-color: #132536 !important;
+  border: 1px solid rgba(15, 219, 110, 0.3) !important;
+  border-radius: 8px !important;
+}
+
+/* New Reddit - sidebar */
+aside,
+[data-testid="subreddit-sidebar"],
+[data-testid="community-sidebar"] {
+  background-color: #081118 !important;
+  border: 1px solid rgba(15, 219, 110, 0.3) !important;
+}
+
+/* New Reddit - links */
+a,
+[data-testid="post-title"],
+[data-click-id="body"],
+[data-testid="search-result-link"] {
+  color: #0FDB6E !important;
+}
+
+a:hover,
+[data-testid="post-title"]:hover {
+  color: #12f07d !important;
+}
+
+/* New Reddit - upvote/downvote */
+button[aria-label*="Upvote"],
+[data-testid="upvote-button"],
+[data-click-id="upvote"] {
+  color: rgba(15, 219, 110, 0.6) !important;
+}
+
+button[aria-label*="Upvote"][aria-pressed="true"],
+[data-testid="upvote-button"][aria-pressed="true"] {
+  color: #0FDB6E !important;
+}
+
+/* New Reddit - header/nav */
+header,
+nav,
+[data-testid="header"],
+[data-testid="subreddit-header"] {
+  background-color: #0D1B2A !important;
+  border-bottom: 1px solid rgba(15, 219, 110, 0.3) !important;
+}
+
+/* New Reddit - search/input */
+input,
+textarea,
+[data-testid="search-input"],
+[role="searchbox"] {
+  background-color: #081118 !important;
+  border: 1px solid rgba(15, 219, 110, 0.3) !important;
+  color: #e8eef4 !important;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #0FDB6E !important;
+}
+
+/* === OLD REDDIT === */
+body,
+html,
+#siteTable,
+.content,
+.side {
+  background-color: #0D1B2A !important;
+}
+
+.thing,
+.link,
+.comment {
+  background-color: #132536 !important;
+  border: 1px solid rgba(15, 219, 110, 0.3) !important;
+}
+
+.thing:hover,
+.link:hover {
+  background-color: rgba(15, 219, 110, 0.1) !important;
 }
 
 a.title,
-a[href*="/r/"] {
-  color: var(--deku-accent) !important;
+a[href*="/r/"],
+a.subreddit {
+  color: #0FDB6E !important;
 }
 
-a.title:hover {
-  color: var(--deku-accent-hover) !important;
+a.title:hover,
+a[href*="/r/"]:hover {
+  color: #12f07d !important;
 }
 
-/* Upvote/downvote accent */
+/* Old Reddit - upvote */
 .arrow.up {
-  color: var(--deku-accent-muted) !important;
+  color: rgba(15, 219, 110, 0.6) !important;
 }
 
 .arrow.upmod {
-  color: var(--deku-accent) !important;
+  color: #0FDB6E !important;
 }
 
-/* New Reddit links */
-shreddit-app a[href] {
-  color: var(--deku-accent) !important;
+/* Old Reddit - header */
+#header,
+#header-bottom-left,
+#header-bottom-right {
+  background-color: #0D1B2A !important;
+  border-color: rgba(15, 219, 110, 0.3) !important;
+}
+
+/* Old Reddit - sidebar */
+.side,
+.sidebox {
+  background-color: #081118 !important;
+  border: 1px solid rgba(15, 219, 110, 0.3) !important;
+}
+
+.side a {
+  color: #0FDB6E !important;
+}
+
+/* Old Reddit - forms */
+input[type="text"],
+input[type="search"],
+textarea {
+  background-color: #081118 !important;
+  border: 1px solid rgba(15, 219, 110, 0.3) !important;
+  color: #e8eef4 !important;
 }

@@ -1,54 +1,110 @@
-/* Izuku Midoriya Rising - Google Search, Gmail, Drive (theme.css loaded via manifest) */
-/* Google Search */
+/* Izuku Midoriya Rising - Google Search, Gmail, Drive (theme.css loaded via manifest)
+ * Comprehensive overhaul - every element covered
+ */
 
+/* === BASE === */
+body,
+html,
 #gb,
 #gb div,
 [data-ved],
-body {
-  background: var(--deku-bg-dark) !important;
+#main,
+#cnt {
+  background-color: #0D1B2A !important;
 }
 
-/* Search bar focus */
+/* === SEARCH BAR === */
 .gLFyf,
-input[name="q"] {
-  background: var(--deku-bg-elevated) !important;
-  border-color: var(--deku-border) !important;
-  color: var(--deku-text) !important;
+input[name="q"],
+#searchform input,
+[role="combobox"] input {
+  background-color: #081118 !important;
+  border: 1px solid rgba(15, 219, 110, 0.3) !important;
+  color: #e8eef4 !important;
 }
 
 .gLFyf:focus,
 input[name="q"]:focus {
-  border-color: var(--deku-accent) !important;
-  box-shadow: 0 0 0 1px var(--deku-accent) !important;
+  border-color: #0FDB6E !important;
+  box-shadow: 0 0 0 1px #0FDB6E !important;
 }
 
-/* Links in results */
-a {
-  color: var(--deku-accent) !important;
+/* === SEARCH RESULTS === */
+#search {
+  background-color: #0D1B2A !important;
+}
+
+.g,
+[data-hveid] {
+  background-color: transparent !important;
+}
+
+/* === LINKS === */
+a,
+.g a,
+#rso a,
+[data-ved] a {
+  color: #0FDB6E !important;
 }
 
 a:visited {
-  color: var(--deku-accent-muted) !important;
+  color: rgba(15, 219, 110, 0.7) !important;
 }
 
 a:hover {
-  color: var(--deku-accent-hover) !important;
+  color: #12f07d !important;
 }
 
-/* Gmail - inbox */
-.aeF, .nH, .bkK {
-  background: var(--deku-bg-dark) !important;
+/* === GMAIL === */
+.aeF,
+.nH,
+.bkK,
+.zA,
+[role="main"] {
+  background-color: #0D1B2A !important;
 }
 
-/* Google Drive */
+.zA:hover {
+  background-color: rgba(15, 219, 110, 0.1) !important;
+}
+
+/* Gmail - inbox list */
+.ae4,
+.ae5 {
+  background-color: #0D1B2A !important;
+}
+
+/* Gmail - links */
+.a3s a,
+.zF {
+  color: #0FDB6E !important;
+}
+
+/* === GOOGLE DRIVE === */
 [role="main"],
-[data-id=":0"] {
-  background: var(--deku-bg-dark) !important;
+[data-id=":0"],
+[data-id=":1"] {
+  background-color: #0D1B2A !important;
 }
 
-/* Shared accent for buttons */
-[role="button"][aria-label],
+/* Drive - file list */
+[data-id] {
+  border-color: rgba(15, 219, 110, 0.2) !important;
+}
+
+[data-id]:hover {
+  background-color: rgba(15, 219, 110, 0.1) !important;
+}
+
+/* Drive - links */
+[role="link"],
+[data-testid="file-list-item"] a {
+  color: #0FDB6E !important;
+}
+
+/* === HEADER ICONS === */
 .gb_g,
-.gb_h {
-  color: var(--deku-accent) !important;
+.gb_h,
+[data-pid] {
+  color: #0FDB6E !important;
 }

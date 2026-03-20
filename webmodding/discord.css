@@ -1,38 +1,141 @@
-/* Izuku Midoriya Rising - Discord (theme.css loaded via manifest) */
-:root {
-  --background-primary: var(--deku-bg-dark) !important;
-  --background-secondary: var(--deku-bg-elevated) !important;
-  --background-secondary-alt: var(--deku-bg-darker) !important;
-  --background-tertiary: var(--deku-bg-elevated) !important;
-  --background-floating: var(--deku-bg-elevated) !important;
-  --background-modifier-hover: var(--deku-accent-subtle) !important;
-  --background-modifier-active: var(--deku-accent-subtle) !important;
-  --channeltextarea-background: var(--deku-bg-darker) !important;
-  --brand-experiment: var(--deku-accent) !important;
-  --brand-experiment-560: var(--deku-accent) !important;
-  --brand-experiment-600: var(--deku-accent-hover) !important;
-  --interactive-active: var(--deku-accent) !important;
-  --interactive-hover: var(--deku-accent-hover) !important;
-  --text-link: var(--deku-accent) !important;
-  --text-positive: var(--deku-accent) !important;
+/* Izuku Midoriya Rising - Discord (theme.css loaded via manifest)
+ * Comprehensive overhaul - every element covered
+ */
+
+/* === ROOT: Override ALL Discord theme variables === */
+:root,
+html,
+[class*="app"],
+[class*="layerContainer"] {
+  --background-primary: #0D1B2A !important;
+  --background-secondary: #132536 !important;
+  --background-secondary-alt: #081118 !important;
+  --background-tertiary: #132536 !important;
+  --background-accent: rgba(15, 219, 110, 0.2) !important;
+  --background-floating: #132536 !important;
+  --background-mobile-primary: #0D1B2A !important;
+  --background-mobile-secondary: #132536 !important;
+  --background-modifier-hover: rgba(15, 219, 110, 0.15) !important;
+  --background-modifier-active: rgba(15, 219, 110, 0.25) !important;
+  --background-modifier-selected: rgba(15, 219, 110, 0.2) !important;
+  --channeltextarea-background: #081118 !important;
+  --brand-experiment: #0FDB6E !important;
+  --brand-experiment-560: #0FDB6E !important;
+  --brand-experiment-600: #12f07d !important;
+  --interactive-active: #0FDB6E !important;
+  --interactive-hover: #12f07d !important;
+  --interactive-muted: rgba(15, 219, 110, 0.5) !important;
+  --text-link: #0FDB6E !important;
+  --text-positive: #0FDB6E !important;
+  --text-brand: #0FDB6E !important;
 }
 
-/* Links and interactive elements */
+/* === BASE === */
+body,
+[class*="app"],
+[class*="layerContainer"],
+[class*="base"] {
+  background-color: #0D1B2A !important;
+}
+
+/* === SIDEBAR - Servers === */
+[class*="guilds"],
+[class*="sidebar"],
+[class*="serverList"] {
+  background-color: #081118 !important;
+}
+
+/* === SIDEBAR - Channels === */
+[class*="channels"],
+[class*="channelList"],
+[class*="scroller"] {
+  background-color: #0D1B2A !important;
+}
+
+/* === CHANNEL ITEM - Selected/Hover === */
+[class*="channel"],
+[class*="listItem"],
+[role="listitem"] {
+  color: #e8eef4 !important;
+}
+
+[class*="channel"]:hover,
+[class*="listItem"]:hover,
+[role="listitem"]:hover {
+  background-color: rgba(15, 219, 110, 0.15) !important;
+  color: #0FDB6E !important;
+}
+
+[class*="selected"],
+[class*="modeSelected"],
+[aria-selected="true"] {
+  background-color: rgba(15, 219, 110, 0.2) !important;
+  color: #0FDB6E !important;
+  border-left: 3px solid #0FDB6E !important;
+}
+
+/* === MAIN CHAT AREA === */
+[class*="chat"],
+[class*="messagesWrapper"],
+[class*="messageList"] {
+  background-color: #0D1B2A !important;
+}
+
+/* === MESSAGES === */
+[class*="message"],
+[class*="messageContent"] {
+  background-color: transparent !important;
+}
+
+[class*="message"] a {
+  color: #0FDB6E !important;
+}
+
+[class*="message"] a:hover {
+  color: #12f07d !important;
+}
+
+/* === INPUT / TEXTAREA === */
+[class*="channelTextArea"],
+[class*="textArea"],
+[class*="slateTextArea"],
+textarea {
+  background-color: #081118 !important;
+  border: 1px solid rgba(15, 219, 110, 0.3) !important;
+  color: #e8eef4 !important;
+}
+
+/* === LINKS === */
 a {
-  color: var(--deku-accent) !important;
+  color: #0FDB6E !important;
 }
 
 a:hover {
-  color: var(--deku-accent-hover) !important;
+  color: #12f07d !important;
 }
 
-/* Online indicator tint */
-[class*="statusGreen"] {
-  color: var(--deku-accent) !important;
+/* === ONLINE INDICATOR === */
+[class*="statusGreen"],
+[class*="online"],
+[class*="status"] circle[fill*="43b581"],
+[class*="status"] circle[fill*="57F287"] {
+  fill: #0FDB6E !important;
+  color: #0FDB6E !important;
 }
 
-/* Selected channel/server */
-[class*="selected"] {
-  background: var(--deku-accent-subtle) !important;
-  border-left-color: var(--deku-accent) !important;
+/* === BUTTONS === */
+button[class*="primary"],
+[class*="lookFilled"] {
+  background-color: #0FDB6E !important;
+  color: #0D1B2A !important;
+}
+
+button[class*="primary"]:hover,
+[class*="lookFilled"]:hover {
+  background-color: #12f07d !important;
+}
+
+/* === SCROLLBAR === */
+[class*="scrollbar"] {
+  background-color: rgba(15, 219, 110, 0.2) !important;
 }
