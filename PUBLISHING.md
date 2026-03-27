@@ -6,7 +6,7 @@
    - **IMPORTANT**: Zip the *contents* of the folder, not the folder itself. `manifest.json` must be at the **root** of the zip (not inside "Izuku Midoriya Rising/manifest.json")
    - Include: `manifest.json`, `license.txt`, and all folders (`wallpaper/`, `music/`, `sound/`, `keyboard/`, `shader/`, `webmodding/`)
    - Include: `Deku_Nut.png` (or whatever your icon file is named)
-   - Ensure `webmodding/` contains all CSS files: `theme.css`, `opera.css`, `youtube.css`, etc.
+   - Ensure `webmodding/` contains: `deku-rising.css`, `deku-opera.css`, and `sites-01`…`sites-06` CSS files referenced in `manifest.json`.
    - **Do NOT** include: `scripts/`, `README.md`, `PUBLISHING.md`, `.git/`, or `Deku_Final_Smash.mp4` (source video)
 
 2. **Go to** [create.gx.games/mods](https://create.gx.games/mods)

@@ -1,0 +1,82 @@
+/* Izuku Midoriya: Rising — https://*.opera.com (tokens from deku-rising.css) */
+html {
+  color-scheme: dark;
+}
+
+body {
+  color: var(--deku-text) !important;
+  background-color: env(-opera-gx-background-color, var(--deku-bg-dark)) !important;
+}
+
+p,
+li,
+span,
+td,
+th,
+label,
+figcaption,
+blockquote,
+div[class*="text"],
+div[class*="content"] {
+  color: inherit !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--deku-text) !important;
+}
+
+a[href]:not([class*="btn"]):not([role="button"]) {
+  color: env(-opera-gx-accent-color, var(--deku-accent)) !important;
+}
+
+a[href]:hover {
+  color: var(--deku-accent-hover) !important;
+}
+
+a[href]:visited {
+  color: #26a69a !important;
+}
+
+header,
+nav,
+footer,
+[role="navigation"],
+[role="banner"],
+[role="contentinfo"] {
+  border-color: var(--deku-border) !important;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+textarea,
+select {
+  background-color: var(--deku-bg-elevated) !important;
+  color: var(--deku-text) !important;
+  border: 1px solid var(--deku-border) !important;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  border-color: var(--deku-accent) !important;
+  box-shadow: 0 0 0 2px rgba(15, 219, 110, 0.35) !important;
+}
+
+button,
+[role="button"],
+input[type="submit"],
+input[type="button"] {
+  accent-color: var(--deku-accent);
+}
+
+hr {
+  border-color: var(--deku-border) !important;
+  opacity: 1 !important;
+}
+
+code,
+pre,
+kbd {
+  background-color: var(--deku-bg-elevated) !important;
+  color: var(--deku-accent-hover) !important;
+  border: 1px solid var(--deku-border) !important;
+}

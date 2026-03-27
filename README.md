@@ -16,7 +16,7 @@ OperaGX/
 ├── sound/                 # Browser sounds (clicks, tabs, etc.)
 ├── keyboard/              # Keyboard typing sounds
 ├── shader/                # Shaders: Hero Glow, Plus Ultra
-├── webmodding/            # CSS for web pages
+├── webmodding/            # `deku-rising.css` (global), `sites-01`…`06`, `deku-opera.css`
 └── scripts/               # Helper scripts
 ```
 

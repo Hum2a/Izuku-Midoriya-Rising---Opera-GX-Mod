@@ -1,0 +1,107 @@
+/* Izuku Midoriya: Rising — global bucket + legacy tokens (Opera sheet) */
+
+:root {
+  --deku-accent: #0fdb6e;
+  --deku-accent-hover: #12f07d;
+  --deku-accent-muted: rgba(15, 219, 110, 0.6);
+  --deku-accent-subtle: rgba(15, 219, 110, 0.2);
+  --deku-bg-dark: #0d1b2a;
+  --deku-bg-darker: #081118;
+  --deku-bg-elevated: #132536;
+  --deku-border: rgba(15, 219, 110, 0.3);
+  --deku-text: #e8eef4;
+  --deku-text-muted: #8fa3b8;
+
+  --deku-hero: #00e676;
+  --deku-deep: #00897b;
+  --deku-mint: #b2dfdb;
+  --deku-void-mist: rgba(8, 20, 35, 0.45);
+  --deku-hero-mist: rgba(15, 219, 110, 0.13);
+}
+
+@keyframes deku-rising-mist-shift {
+  0% {
+    opacity: 0.55;
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.04) translate3d(1.5%, -1%, 0);
+  }
+  100% {
+    opacity: 0.6;
+    transform: scale(1.08) translate3d(-1%, 1.2%, 0);
+  }
+}
+
+html {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(80% 60% at 15% 22%, var(--deku-hero-mist), transparent 55%),
+    radial-gradient(70% 55% at 85% 72%, var(--deku-void-mist), transparent 50%),
+    linear-gradient(
+      118deg,
+      color-mix(in srgb, env(-opera-gx-accent-color, var(--deku-hero)) 11%, transparent),
+      color-mix(in srgb, env(-opera-gx-background-color, var(--deku-mint)) 12%, transparent)
+    );
+  animation: deku-rising-mist-shift 22s ease-in-out infinite alternate;
+}
+
+a:any-link {
+  color: env(-opera-gx-accent-color, var(--deku-hero));
+}
+
+a:any-link:hover {
+  color: color-mix(in srgb, env(-opera-gx-accent-color, var(--deku-hero)) 82%, white);
+}
+
+:focus-visible {
+  outline: 2px solid env(-opera-gx-accent-color, var(--deku-hero));
+  outline-offset: 2px;
+}
+
+::selection {
+  background: color-mix(in srgb, env(-opera-gx-accent-color, var(--deku-hero)) 38%, transparent);
+  color: inherit;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--deku-text-muted) !important;
+  opacity: 1 !important;
+}
+
+* {
+  scrollbar-color: color-mix(in srgb, env(-opera-gx-accent-color, var(--deku-hero)) 55%, transparent)
+    color-mix(in srgb, env(-opera-gx-background-color, var(--deku-bg-darker)) 40%, transparent);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: color-mix(in srgb, env(-opera-gx-background-color, #0a1520) 35%, transparent);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    env(-opera-gx-accent-color, var(--deku-hero)),
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--deku-hero)) 45%, #0d1b2a)
+  );
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: env(-opera-gx-accent-color, var(--deku-hero));
+}
